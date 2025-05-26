@@ -1,0 +1,16 @@
+:root {
+  /* Color Variables */
+  --background-color: #343541;
+  --header-color: #202123;
+  --chat-background-color: #444654;
+  --bot-message-color: #555770;
+  --user-message-color: #2e8bff;
+  --input-area-color: #202123;
+  --button-color: #10a37f;
+  --text-color: #ffffff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
