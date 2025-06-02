@@ -1,0 +1,55 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #1e1e1e;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.video-container {
+  position: relative;
+  width: 640px;
+}
+
+video {
+  width: 100%;
+  cursor: pointer;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  background: #333;
+  padding: 10px;
+}
+
+button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+input[type="range"]#progress {
+  flex: 1;
+  margin-right: 10px;
+  appearance: none;
+  height: 5px;
+  background: #555;
+}
+
+input[type="range"]#progress::-webkit-slider-thumb {
+  appearance: none;
+  height: 15px;
+  width: 15px;
+  background: red;
+  border-radius: 50%;
+}
+
+input[type="range"]#volume {
+  width: 100px;
+}
