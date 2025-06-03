@@ -1,0 +1,115 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background: #005B99;
+}
+
+.container {
+    width: 300px;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: #fff;
+    transform: translateY(50%);
+    margin: auto;
+    border-radius: 10px;
+}
+
+h2 {
+    color: #005B99;
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 10px;
+    width: 250px;
+    outline: #aaa;
+    border: 1px solid #005B99;
+}
+
+.start {
+    width: 250px;
+    padding: 10px 15px;
+    border: none;
+    background: #005B99;
+    color: #fff;
+    font-size: 1.1em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/*timer*/
+.timer-container {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+    margin: auto;
+    height: 50vh;
+    transform: translateY(50%);
+    display: none;
+}
+
+.timer-container h3 {
+    color: #005B99;
+    font-size: 24px;
+    margin-bottom: 1.5rem;
+}
+
+.displayStart {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.counter {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btnTime {
+    background-color: #005B99;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 1rem 1.2rem;
+    border-radius: 12px;
+    min-width: 60px;
+    text-align: center;
+}
+
+.btns {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.btns button {
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #005B99;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btns button:hover {
+    background-color: #004777;
+}

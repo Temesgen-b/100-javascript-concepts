@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>count down timer </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Count down </h2>
+        <input type="text" placeholder="enter title" class="texts" required>
+        <input type="date" class="dateinput" required>
+        <button class="start">Start count down </button>
+    </div>
+    <div class="timer-container">
+        <h3 class="title"> Counter title </h3>
+        <div class="displayStart">
+            <div class="counter">
+                <div class="btnTime day">0 </div>
+                <div class="btnTime hour">0</div>
+                <div class="btnTime minute">0</div>
+                <div class="btnTime second">0</div>
+                <div class="control">
+                </div>
+
+
+                <div class="btns">
+                    <button onclick="timer.stop()">stop</button>
+                    <button onclick="timer.restart()">restart</button>
+                    <button onclick="timer.start()">start</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="advance.js"></script>
+</body>
+
+</html>
