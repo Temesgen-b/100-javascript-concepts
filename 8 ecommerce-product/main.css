@@ -144,4 +144,40 @@ html {
   opacity: 0.9;
   filter: brightness(70%) contrast(90%);
   transition: filter 0.3s;
+} 
+/*header */ 
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--Grayish-blue);
+  margin-bottom: 45px;
+}
+
+.logo-toggle-container {
+  display: flex;
+  gap: 40px;
+}
+
+.toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.nav-first ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.nav-first ul a {
+  font-weight: 500;
+  transition: all 0.5s ease-in-out;
+}
+
+.nav-first ul a:hover {
+  color: black;
 }
