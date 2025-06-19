@@ -35,4 +35,22 @@ mainImg.addEventListener("click", () => {
 // clicking on close button
 closePopup.addEventListener("click", () => {
   overlay.classList.remove("active");
+}); 
+
+// event for popup  next button
+next.addEventListener("click", () => {
+  const currentIndex = popupThumbnails.findIndex(
+    (popupThumbnail) => popupThumbnail.src === mainPopupImg.src
+  );
+  if (currentIndex >= 0) {
+    const nextIndex = (currentIndex + 1) % popupThumbnails.length;
+    mainPopupImg.src = popupThumbnails[nextIndex].src;
+    popupThumbnails.forEach((popupThumbnail) => {
+      if (mainPopupImg.src === popupThumbnail.src) {
+        popupThumbnail.classList.add("activated");
+      } else {
+        popupThumbnail.classList.remove("activated");
+      }
+    });
+  }
 });
