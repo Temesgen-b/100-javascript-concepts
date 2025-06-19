@@ -12,4 +12,17 @@ const previous = document.getElementById("previous");
 const next = document.getElementById("next");
 const accToCartBtn = document.querySelector(".btn-With-icon");
 const CartPPopupContainer = document.getElementById("cart-popup");
-const cartIcon = document.getElementById("cart-icon");
+const cartIcon = document.getElementById("cart-icon"); 
+
+// add event Listener to the each thumbnail
+thumbnails.forEach((thumbnail) => {
+  thumbnail.addEventListener("click", () => {
+    //update main image 
+    mainImg.src = thumbnail.src;
+
+    // remove activated class from all then add to  clicked
+    thumbnails.forEach((thumb) => thumb.classList.remove("activated"));
+    thumbnail.classList.add("activated");
+
+  });
+});
