@@ -25,4 +25,14 @@ thumbnails.forEach((thumbnail) => {
     thumbnail.classList.add("activated");
 
   });
+}); 
+
+// click event for main image to open the popup
+mainImg.addEventListener("click", () => {
+  overlay.classList.add("active");
+});
+
+// clicking on close button
+closePopup.addEventListener("click", () => {
+  overlay.classList.remove("active");
 });
