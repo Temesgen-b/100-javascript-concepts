@@ -131,4 +131,9 @@ function addToCart() {
   }
 }
 
-accToCartBtn.addEventListener("click", addToCart);
+accToCartBtn.addEventListener("click", addToCart); 
+
+// event listener for cart icon
+cartIcon.addEventListener("click", () => {
+  CartPPopupContainer.style.display = "block";
+});
