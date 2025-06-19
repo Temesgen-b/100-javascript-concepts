@@ -53,4 +53,23 @@ next.addEventListener("click", () => {
       }
     });
   }
+}); 
+
+//event for  popup previous button
+previous.addEventListener("click", () => {
+  const currentIndex = popupThumbnails.findIndex(
+    (popupThumbnail) => popupThumbnail.src === mainPopupImg.src
+  );
+  if (currentIndex > 0) {
+    const previousIndex =
+      (currentIndex - 1 + popupThumbnails.length) % popupThumbnails.length;
+    mainPopupImg.src = popupThumbnails[previousIndex].src;
+    popupThumbnails.forEach((popupThumbnail) => {
+      if (mainPopupImg.src === popupThumbnail.src) {
+        popupThumbnail.classList.add("activated");
+      } else {
+        popupThumbnail.classList.remove("activated");
+      }
+    });
+  }
 });
