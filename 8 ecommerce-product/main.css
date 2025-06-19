@@ -15,4 +15,27 @@
   --Grayish-blue: hsl(220, 14%, 75%);
   --Light-grayish-blue: hsl(223, 64%, 98%);
   --White: hsl(0, 0%, 100%);
+} 
+/*general css rules */ 
+
+a {
+  color: var(--Dark-grayish-blue);
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+html {
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.container {
+  max-width: 1107px;
+  max-height: 1000vh;
+  height: auto;
+  padding: 0 5rem;
+  margin: auto;
+  position: relative;
 }
