@@ -418,4 +418,17 @@ header {
     gap: 13px;
     width: 35%;
   }
+} 
+
+/*Mobile responsive*/
+@media (max-width: 375px) {
+  .container {
+    padding: 0 1rem;
+    margin: 0 auto;
+  }
+  .cart-popup {
+    max-width:100%;
+    width:100%;
+    margin: auto;
+  }
 }
