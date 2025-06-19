@@ -380,4 +380,42 @@ header {
   font-weight: 600;
   background: none;
   cursor: pointer;
+} 
+/* Desktop and tablet media  */
+@media (max-width: 750px) {
+  .container {
+    padding: 0 2rem;
+  }
+
+  .nav-first ul {
+    display: none;
+  }
+
+  .toggle {
+    display: flex;
+  }
+
+  .product-container {
+    flex-direction: column;
+    justify-content: center;
+    padding: 25px;
+    gap: 20px;
+  }
+
+  .product-right {
+    padding: 0.25rem;
+  }
+  .bottom-img {
+    padding: 0.25rem;
+  }
+  .quantity-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .btn-With-icon {
+    gap: 13px;
+    width: 35%;
+  }
 }
