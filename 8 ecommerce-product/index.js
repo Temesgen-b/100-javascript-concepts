@@ -88,4 +88,47 @@ minus.addEventListener("click", () => {
     quantity--;
     numberQuantity.innerText = quantity;
   }
-});
+}); 
+
+// add To Cart function 
+function addToCart() {
+  const numberOfQuantity = parseInt(document.getElementById("num").textContent);
+  const emptyMessage = document.querySelector(".empty-message");
+  const checkoutBtn = document.getElementById("checkout-btn");
+  const cartContainer = document.querySelector(".cart");
+
+  // show cart content
+  emptyMessage.style.visibility = "hidden";
+  checkoutBtn.style.visibility = "visible";
+
+  for (let i = 0; i < numberOfQuantity; i++) {
+    const ul = document.createElement("ul");
+    ul.className = "item-container";
+
+    const item = document.createElement("img");
+    item.className = "item-img";
+    item.src = mainImg.src;
+
+    const li = document.createElement("li");
+    li.textContent = `fall Limited Edition sneakers $125.00 * ${numberOfQuantity} $375.0`;
+
+    const deleteBtn = document.createElement("img");
+    deleteBtn.className = "delete-btn";
+    deleteBtn.src = "images/icon-delete.svg";
+
+    // item remove
+    deleteBtn.addEventListener("click", () => {
+      cartContainer.removeChild(ul);
+      if (cartContainer.querySelectorAll(".item-container").length === 0) {
+        emptyMessage.style.visibility = "visible";
+        checkoutBtn.style.visibility = "hidden";
+      }
+    });
+
+    //append ul in item container
+    ul.append(item, li, deleteBtn);
+    cartContainer.append(ul);
+  }
+}
+
+accToCartBtn.addEventListener("click", addToCart);
