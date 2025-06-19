@@ -72,4 +72,20 @@ previous.addEventListener("click", () => {
       }
     });
   }
+}); 
+
+// quantity increment and decrement
+let quantity = 0;
+plus.addEventListener("click", () => {
+  if (quantity >= 0) {
+    quantity++;
+    numberQuantity.innerText = quantity;
+  }
+});
+
+minus.addEventListener("click", () => {
+  if (quantity > 0) {
+    quantity--;
+    numberQuantity.innerText = quantity;
+  }
 });
