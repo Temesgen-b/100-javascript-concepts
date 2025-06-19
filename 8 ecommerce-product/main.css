@@ -196,4 +196,21 @@ header {
 
 .nav-first ul a:hover {
   color: black;
+} 
+/*hover*/
+.nav-first a {
+  position: relative;
 }
+
+.nav-first a:hover::after {
+  content: "";
+  background-color: var(--Orange);
+  position: absolute;
+  left: 0;
+  bottom: -27px;
+  width: 100%;
+  height: 3px;
+  transition: width 0.3s ease-in-out;
+}
+
+/*hover end*/
